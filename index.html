@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Open Modal -->
+    <h1 id="show-modal">Add Bookmark</h1>
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container"></div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Add Bookmark</h3>
+
+        <i class="fas fa-times close-icon" id="close-modal"></i>
+        </div>
+        <div class="modal-content">
+          <form id="bookmark-form">
+            <!-- Website name -->
+            <div class="form-group">
+              <label for="website-name" class="form-label">Website Name</label>
+              <input type="text" class="form-input" id="website-name">
+            </div>
+            <!-- Website url -->
+            <div class="form-group">
+              <label for="website-url" class="form-label">Website Url</label>
+              <input type="text" class="form-input" id="website-url">
+            </div>
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
